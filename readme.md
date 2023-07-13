@@ -154,7 +154,7 @@ const useSoundStore = create((set, get) => ({
     const sound = get().sound
     // ...
   }
-})
+}))
 ```
 
 ## Reading/writing state and reacting to changes outside of components
