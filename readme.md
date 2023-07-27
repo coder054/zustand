@@ -18,7 +18,7 @@ You can try a live demo [here](https://githubbox.com/pmndrs/zustand/tree/main/ex
 npm install zustand # or yarn add zustand or pnpm add zustand
 ```
 
-:warning: This readme is written for JavaScript users. If you are a TypeScript user, don't miss [TypeScript Usage](#typescript-usage).
+:warning: This readme is written for JavaScript users. If you are a TypeScript user, be sure to check out our [TypeScript Usage section](#typescript-usage).
 
 ## First create a store
 
@@ -149,11 +149,15 @@ const useFishStore = create((set) => ({
 
 ```jsx
 const useSoundStore = create((set, get) => ({
-  sound: "grunt",
+  sound: 'grunt',
   action: () => {
     const sound = get().sound
     // ...
+<<<<<<< HEAD
   }
+=======
+  },
+>>>>>>> 21a4b0f9b8b09cff7345ba0f437cc83acd11811e
 }))
 ```
 
@@ -513,6 +517,7 @@ A more complete TypeScript guide is [here](docs/guides/typescript.md).
 - Recommended usage for this unopinionated library: [Flux inspired practice](./docs/guides/flux-inspired-practice.md).
 - [Calling actions outside a React event handler in pre-React 18](./docs/guides/event-handler-in-pre-react-18.md).
 - [Testing](./docs/guides/testing.md)
+- For more, have a look [in the docs folder](./docs/)
 
 ## Third-Party Libraries
 
